@@ -1,14 +1,15 @@
-# This is the repository specific custom dictionary
-#
-# Write the words in alphabetical order, one word per line.
-# If an unknown word is generic put it into the global dictionary
-# in yast-rake in lib/tasks/spell.yml file.
+SummonGolem:
+  spell_class: com.elmakers.mine.bukkit.action.builtin.SummonEntity
+  parameters:
+    entity_type: IRON_GOLEM
+    power: 1000
+    health: 20000
+    duration: 3000
+    target_self: true
+  effects:
+    cast:
+      particle: VILLAGER_HAPPY
+      radius: 5
+  icon: IRON_BLOCK
+  description: "Triệu hồi một Golem để hỗ trợ bạn trong chiến đấu."
 
----
-ignore:
-  - "doc/**/*"
-  - "coverage/**/*"
-dictionary:
-  - SLE
-  - SMT
-  - vc
